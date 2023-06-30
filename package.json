@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "installWebPackNpm": "npm i --save-dev webpack webpack-cli html-webpack-plugin html-loader mini-css-extract-plugin css-loader babel-loader @babel/preset-env",
+    "installDevServerNpm": "npm i --save-dev webpack-dev-server",
+    "installWebpackYarn": "yarn add webpack webpack-cli html-webpack-plugin html-loader mini-css-extract-plugin css-loader babel-loader --dev",
+    "installDevserverYarn": "yarn add webpack-dev-server --dev",
+    "installJestYarn": "yarn add jest @babel/core @babel/cli @babel/preset-env --dev",
+    "installCoreJsYarn": "yarn add core-js@3",
+    "instalEsLintYarn": "yarn add eslint eslint-config-airbnb-base --dev",
+    "installEslintYarn": "yarn add eslint eslint-plugin-import eslint-config-airbnb-base --dev",
+    "installPuppeteerYarn": "yarn add puppeteer@19.4.0 --dev",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "coverage": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
