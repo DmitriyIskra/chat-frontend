@@ -4,8 +4,6 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "installWebPackNpm": "npm i --save-dev webpack webpack-cli html-webpack-plugin html-loader mini-css-extract-plugin css-loader babel-loader @babel/preset-env",
-    "installDevServerNpm": "npm i --save-dev webpack-dev-server",
     "installWebpackYarn": "yarn add webpack webpack-cli html-webpack-plugin html-loader mini-css-extract-plugin css-loader babel-loader --dev",
     "installDevserverYarn": "yarn add webpack-dev-server --dev",
     "installJestYarn": "yarn add jest @babel/core @babel/cli @babel/preset-env --dev",
@@ -26,9 +24,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "uuid": "^9.0.0"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.22.5",
     "babel-loader": "^9.1.2",

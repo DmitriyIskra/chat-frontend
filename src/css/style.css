@@ -41,7 +41,7 @@
 .clients-list {
     display: flex;
     margin-top: 26px;
-    padding: 25px 10px 10px;
+    padding: 25px 10px 25px;
     min-width: 218px;
     gap: 7px;
 
@@ -78,6 +78,7 @@
 /* border-chat */
 
 .messages-board {
+    display: flex;
     width: 630px;
     padding-bottom: 14px;
 
@@ -86,21 +87,25 @@
     border: 1px solid #333333;
     border-radius: 12px;
     background-color: #ffffff;
+
+    flex-direction: column;
 }
 
 .messeges {
-    height: 470px;
+    display: flex;
+    min-height: 450px;
     padding: 25px;
+    gap: 5px;
 
+    flex-grow: 1;
+    flex-direction: column;
     overflow: auto;
 }
 
 .wrapper-message {
     display: flex;
-    width: 427px;
 
     flex-direction: column;
-    gap: 20px;
 }
 
 .date-name {
@@ -122,8 +127,12 @@
     justify-content: center;
 }
 
-.type-message {
+.form-type-message {
     width: 90%;
+}
+
+.type-message {
+    width: 100%;
     padding: 10px 18px;
 
     font-family: Arial, Helvetica, sans-serif;
