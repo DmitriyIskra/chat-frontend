@@ -1,7 +1,6 @@
 import ControlChat from "./controlChat";
 import RedrawChat from "./RedrawChat";
 import UserApi from "./api/userApi";
-import MessageApi from './api/MessageApi';
 import Pattern from "./Pattern";
 import Ws from "./api/ws";
 import { v4 } from 'uuid';
